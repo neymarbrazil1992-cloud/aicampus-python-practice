@@ -3,12 +3,14 @@ num = input('값 입력 : ')#CA72
 
 if sel == 16 :
     num10=int(num,16) #CA72를 16
-if sel == 10 :
+elif sel == 10 :
     num10=int(num,10)
-if sel == 8 :
+elif sel == 8 :
     num10=int(num,8)
-if sel == 2 :
+elif sel == 2 :
     num10=int(num,2)
+else:
+    print("잘못된 진법입니다.")
     
 print("16진수 ==> ", hex(num10))
 print("10진수 ==> ", num10)
