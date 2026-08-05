@@ -1,0 +1,6 @@
+pythonbasic/Lib/
+pythonbasic/Scripts/
+pythonbasic/Include/
+pythonbasic/pyvenv.cfg
+__pycache__/
+*.pyc
