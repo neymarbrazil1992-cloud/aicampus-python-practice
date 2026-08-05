@@ -1,0 +1,10 @@
+a=int(input("Type 1st Number : "))
+b=int(input("Type 2nd Number : "))
+result=a+b
+print(a, "+", b , "=", result)
+result=a-b
+print(a, "-", b , "=", result)
+result=a*b
+print(a, "*", b , "=", result)
+result=a/b
+print(a, "/", b , "=", result)
