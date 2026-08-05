@@ -13,7 +13,7 @@ while True:
     heartNum=int(ch) # 숫자로 형 변환 
     
     heartStr=""
-    for k in range(0, heartNum+1): #for(int i=0;i<numStr.length;i++)
+    for k in range(0, heartNum): #for(int i=0;i<numStr.length;i++)
         heartStr+="\u2665" #하트모양의 유니코드
     print(heartStr)
     
