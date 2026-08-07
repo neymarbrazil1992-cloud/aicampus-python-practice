@@ -1,0 +1,21 @@
+import random
+import time 
+
+# 0.0과 1.0 사이 
+num1 = random.random()
+print(num1)
+
+#두번째 인자값 미포함 
+num2 = random.uniform(1,7)
+print(num2)
+
+#두번째 인자값 포함 
+num3 = random.randint(1,5)
+print(num3)
+
+#-----------------------------
+print()
+print(time.time())
+print(time.localtime(time.time()))
+lt = time.localtime(time.time())
+print(time.strftime('%Y/%m%d - %H:%M:%S', lt))
