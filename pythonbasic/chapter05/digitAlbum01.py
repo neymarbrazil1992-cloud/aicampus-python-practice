@@ -28,8 +28,23 @@ def clickPrev():
     pLabel.configure(image=photo) 
     pLabel.image=photo
     
+def clickNext():
+    global num 
+    num += 1
+    
+    if num >= len(fnameList):
+        num = 0
+        
+    photo=PhotoImage(file=fnameList[num])
+    pLabel.configure(image=photo) 
+    pLabel.image=photo    
+     
+    
 def pageDown(event):
     clickPrev()
+    
+def pageUp(event):
+    clickNext()
 
 
 #메인 
@@ -39,14 +54,18 @@ window.title("디지털 앨범")
 
 #키보드 이벤트1
 window.bind("<Next>", pageDown) #pgDn
+window.bind("<Prior>", pageUp) #pgDn
 
 #키보드 이벤트2
 window.bind("<Left>", pageDown) # <- 이전 이미지 
+window.bind("<Right>", pageUp) # <- 다음 이미지 
 
 
 #마우스 이벤트 
 btnprev = Button(window, text="<<이전", command= clickPrev)
 btnprev.place(x=250, y=10)
+btnnext = Button(window, text="다음>>", command=clickNext)
+btnnext.place(x=400, y=10)
 
 
 #첫 번째 이미지 적용 
