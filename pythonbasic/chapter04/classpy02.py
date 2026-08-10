@@ -22,3 +22,5 @@ myCar2.speed=50
 print("자동차2의 현재 속도는 %dkm 이고, 생성된 자동차 수는 %d 입니다. " %(myCar2.speed, Car.count))
 myCar3.speed=120
 print("자동차3의 현재 속도는 %dkm 이고, 생성된 자동차 수는 %d 입니다. " %(myCar3.speed, Car.count))
+
+

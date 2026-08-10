@@ -4,9 +4,16 @@ class Car:
     #맴버 변수 
     color = ""
     speed = 0
+    
+# public class Car {
+#     int speed = 0;
+#     void upSpeed(int value) {
+#         this.speed += value;
+#     }  
+#     }
             
     def upSpeed (self, value):
-        self.speed += value
+        self.speed += value #this. 과 같은 역할 
         
     def downSpeed (self, value):
         self.speed -= value
