@@ -28,6 +28,20 @@ if ch == 1:
     con.commit()
     print("데이터 입력 완료")
 elif ch == 2:
+    cur.execute("select * from userTable")
+    print("사용자ID 사용자이름 이메일 생년월일")
+    print("------------------------------------------------------")
+    rows = cur.fetchall()
+    if not rows:
+        print("저장된 데이터가 없습니다.")
+    else:
+        for row in rows:
+            data1 = row[0] if len(row) > 0 else ""
+            data2 = row[1] if len(row) > 0 else ""
+            data3 = row[2] if len(row) > 0 else ""
+            data4 = row[3] if len(row) > 0 else ""
+            print("%6s %10s %25s %10s" % (data1, data2, data3, data4))
+    
     
 
 cur.close()

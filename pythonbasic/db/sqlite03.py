@@ -6,7 +6,7 @@ con=sqlite3.connect("C:/workspace/aicampus_python/sqlite/soldesk")
 cur = con.cursor()
 
 #데이터 조회
-cur.execute("select * from T_STU_INFO)")
+cur.execute("select * from T_STU_INFO")
 
 rows = cur.fetchall()
 print(rows)

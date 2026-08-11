@@ -14,12 +14,12 @@ cur = con.cursor()
 
 #데이터 삭제
 
-# cur.execute("delete from T_STU_INFO)") -> 모든 데이터 초기화 
-cur.execute("delete from T_STU_INFO where ST_name='soldesk')")
+# cur.execute("delete from T_STU_INFO") #-> 모든 데이터 초기화 
+cur.execute("delete from T_STU_INFO where ST_name='soldesk'")
 
 
 #데이터 조회
-cur.execute("select * from T_STU_INFO)")
+cur.execute("select * from T_STU_INFO")
 
 rows = cur.fetchall()
 print(rows)
